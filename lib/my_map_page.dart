@@ -4,6 +4,8 @@ import 'my_profile_page.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class MyMapPage extends StatelessWidget {
+  const MyMapPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,8 +32,8 @@ class MyMapPage extends StatelessWidget {
               IconButton(
                 icon: Icon(Icons.camera_alt, size: 40, color: Colors.grey),
                 onPressed: () async {
-                  final ImagePicker _picker = ImagePicker();
-                  await _picker.pickImage(source: ImageSource.camera);
+                  final ImagePicker picker = ImagePicker();
+                  await picker.pickImage(source: ImageSource.camera);
                   // 여기서 카메라 열기 및 사진 찍기 기능 구현
                 },
               ),
@@ -51,6 +53,8 @@ class MyMapPage extends StatelessWidget {
 }
 
 class MapSample extends StatefulWidget {
+  const MapSample({super.key});
+
   @override
   State<MapSample> createState() => MapSampleState();
 }

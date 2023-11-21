@@ -3,6 +3,8 @@ import 'package:image_picker/image_picker.dart';
 import 'my_map_page.dart';
 
 class MyProfilePage extends StatefulWidget {
+  const MyProfilePage({super.key});
+
   @override
   _MyProfilePageState createState() => _MyProfilePageState();
 }
@@ -76,8 +78,8 @@ class _MyProfilePageState extends State<MyProfilePage> {
               IconButton(
                 icon: Icon(Icons.camera_alt, size: 40, color: Colors.grey),
                 onPressed: () async {
-                  final ImagePicker _picker = ImagePicker();
-                  await _picker.pickImage(source: ImageSource.camera);
+                  final ImagePicker picker = ImagePicker();
+                  await picker.pickImage(source: ImageSource.camera);
                   // 여기서 카메라 열기 및 사진 찍기 기능 구현
                 },
               ),

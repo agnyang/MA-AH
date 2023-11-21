@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'my_map_page.dart';
-import 'my_profile_page.dart';
-import 'package:image_picker/image_picker.dart';
-import 'dart:io';
 
 void main() => runApp(const MyApp());
 
