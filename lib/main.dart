@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Builder(
         // Builder 위젯을 사용하여 적절한 context 제공
+        // 연결하기
         builder: (context) => Scaffold(
           body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
